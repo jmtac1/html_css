@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>mark {background-color: aqua;}</style>
+</head>
+<body>
+    <h1>Principais formatações: </h1>
+    <h2>Negrito / destaque</h2>
+    <p>palavra em negrito usando a tag &lt;b&gt; (tag não semântica): <b>palavra</b></p> 
+    <p>palavra em destaque usando a tag &lt;strong&gt; (tag semântica): <strong>palavra</strong> </p>
+
+    <h2>Itálico / ênfase</h2>
+    <p>texto em Itálico usando a tag &lt;i&gt; (não semântica): <i>palavra</i></p>
+    <p>texto em ênfase usando a tag &lt;em&gt; (semântica): <em>palavra</em></p>
+
+    <h2>Texto marcado</h2>
+    <p>texto destacado usando a tag &lt;mark&gt;: <mark>palavra</mark></p> <!--o parametro style é css-->
+    <p>texto destacado com cor diferente usando o parametro "style": <mark style="background-color: chartreuse;">palavra</mark></p>
+
+    <h2>Texto grande / pequeno</h2>
+    <p>texto grande usando a tag &lt;big&gt;: <big>palavra</big></p>
+    <p>texto pequeno usando a tag &lt;small&gt;: <small>palavra</small></p>
+
+    <h2>Texto excluído / sublinhado</h2>
+    <p>texto excluído usando a tag &lt;del&gt;: <del>palavra</del></p>
+    <p>texto sublinhado usando a tag &lt;ins&gt;: <ins>palavra</ins></p>
+
+    <h2>Texto sobrescrito / subscrito</h2>
+    <p>texto sobrescrito usando a tag &lt;sup&gt;: <sup>palavra</sup></p>
+    <p>texto subscrito usando a tag &lt;sub&gt;: <sub>palavra</sub></p>
+
+    <h2>Fonte mono espaçada</h2>
+    <p>texto com fonte mono espaçada usando a tag &lt;code&gt;: <code>palavra</code></p>
+
+    <h2>Texto escrito com formato de código-fonte</h2>
+    <pre><code>
+num = input("digite um numero: ")
+if num % 2 == 0:
+    print("numero par")
+else:
+print("numero impar")
+    </code></pre>
+
+    <h2>Citações simples / completas</h2>
+    <p>citação simples usando a tag &lt;q&gt;: <q>palavra</q></p>
+    <p>citação completa usando a tag &lt;blockquote&gt;: <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam totam perspiciatis odit omnis asperiores in dolor corrupti esse sapiente. In aperiam illum modi ad sequi? Vero minus a ex quaerat.</blockquote></p>
+
+    <h2>Texto abreviado</h2>
+    <p>indicar texto abreviado usando a tag &lt;abbr&gt;: <abbr title="palavra">plvr</abbr></p>
+
+    <h2>Texto invertido</h2>
+    <p>texto invertido usando a tag &lt;bdo&gt;: <bdo dir="rtl">palavra</bdo></p>
+</body>
+</html>

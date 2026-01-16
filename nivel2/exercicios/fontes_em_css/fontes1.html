@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        h1, h2 {
+            font-family: serif
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de fonte</h1>
+    <h2>serif, sans-serif, monospace, handwriting, display:</h2>
+    <ul>
+        <li style="font-family: serif;">exemplo de fonte serif: palavra</li>
+        <li style="font-family: sans-serif;">exemplo de fonte sans-serif: palavra</li>
+        <li style="font-family: monospace;">exemplo de fonte monospace: palavra</li>
+        <li>não tem exemplo de fonte handwriting mas é literalmente o que o nome diz, simular uma escrita a mão</li>
+        <li>também não tem exemplo de fonte display, mas a fonte do filme jurassic park é um exemplo</li>
+    </ul>
+    <p>é recomendado o uso das fontes do tipo "serif" para títulos</p>
+    <p>é recomendado o uso das fontes do tipo "sans-serif" para textos mais longos</p>
+    <p>é recomendado o uso das fontes do tipo "monospace" para código-fonte, pois os caracteres tem o mesmo tamanho</p>
+    <h1>Tamanhos de fonte</h1>
+    <h2>medidas absolutas: cm, mm, in, px, pt, pc</h2>
+    <h2>medidas relativas: em, ex, rem, vw, vh, %</h2>
+    <p>as medidas recomendadas para uso são: "px" ou "em"</p>
+    <p>1em é igual a 16px, que é a medida padrão nos navegadores</p>
+    <p>por isso é recomendado usar a medida "em", para poder trabalhar com as porcentagens da medida padrão</p>
+    <h2>Peso e estilo da fonte:</h2>
+    <p>algumas fontes podem ser alteradas a largura (weight) e o estilo (style) adicionando os parametros (font-weight) e (font-style)</p>
+    <h2>Shorthand font:</h2>
+    <p>todas essas configurações de fonte podem ser simplificadas com shorthand. Com a sintaxe para fazer essas configurações ficando assim por exemplo:</p>
+    <p>(font: italic bolder 1em Arial, Helvetica, sans-serif)</p>
+    <p>sendo a ordem a dos parametros a seguinte: (font-style), (font-weight), (font-size) e (font-family)</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    <h1>Como adicionar diferentes mídias em um site</h1>
+    <h2>imagens dinâmicas:</h2>
+    <p>usando a tag &lt;picture&gt; e &lt;source&gt; podemos adicionar imagens de tamanhos diferentes, para que se adapte ao tamanho da tela</p>
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/OS_Linux_23399.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/15465695.png" type="image/png"> 
+        <img src="imagens/linux.jpg" alt="">
+    </picture>
+
+    <h2>adicionar audios:</h2>
+    <p>usando a tag &lt;audio&gt; e com o parametro "controls" podemos adicionar um player de audio</p>
+    <p>assim como as imagens podemos adicionar as tags &lt;audio&gt; e &lt;source&gt; para adicionar varios formatos de audio caso o navegador não consiga reproduzir algum formato especifico</p>
+    <audio src="midia/Nebula - The Grey Room _ Density & Time.mp3" controls></audio>
+
+    <h2>adicionar videos hospedados localmente:</h2>
+    <p>do mesmo jeito do audio, podemos adicionar um player de videos usando a tag &lt;video&gt; e o parametro "controls"</p>
+    <p>tambem do mesmo jeito do audio, podemos adicionar varios formatos de video em caso de não compatibilidade do navegador </p>
+    <video width="500" poster="imagens/glWla8v.png" loop autoplay controls> <!--os parametros "loop" e "autoplay" fazem a midia reproduzir em loop e automaticamente-->
+        <source src="midia/video_1080p (1).mp4" type="video/mp4">
+        <source src="midia/video_1080p (2).mkv" type="video/mkv">
+    </video>
+
+    <h2>adicionar videos externos:</h2>
+    <p>voce pode adicionar videos de varias plataformas diferentes, inclusive do youtube:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sAYhwcOtvX0?si=rAvNdFQGZk6zkys2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

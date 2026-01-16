@@ -1,0 +1,31 @@
+@charset 'UTF8';
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+body {
+    background-color: bisque;
+    font-family: sans-serif;
+}
+h1 {
+    color: rgb(250, 138, 1);
+}
+h1#principal{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+h2 {
+    color: rgb(86, 48, 1);
+}
+.basico {
+    color: green;
+}
+.intermediario {
+    color: yellow;
+}
+.avançado {
+    color: red;
+}
+.destaque {
+    background-color: rgba(0, 255, 255, 0.291);
+}
