@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navegação em iframe</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        #tela {
+            width: 600px;
+            height: 800px;
+            display: block;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>navegação no iframe</h1>
+    <h2>meus sites:</h2>
+    <ul>
+        <li><a href="/home/jmtac/Documentos/estudos/html_css/nivel2/desafios/site_android/android.html" target="frame">site do android</a></li>
+        <li><a href="/home/jmtac/Documentos/estudos/html_css/nivel3/desafios/cordel/index.html" target="frame">site do cordel</a></li>
+        <li><a href="/home/jmtac/Documentos/estudos/html_css/nivel3/desafios/astronauta/astronauta.html" target="frame">site do astronauta</a></li>
+    </ul>
+    <iframe srcdoc="<h1>escolha uma opção acima</h1>" frameborder="1" id="tela" name="frame"></iframe>
+</body>
+</html>
