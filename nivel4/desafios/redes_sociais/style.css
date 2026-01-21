@@ -13,11 +13,11 @@ body {
     background-size: cover;
 }
 section#container {
+    padding: 75px;
     display: grid;
     place-items: center;
 }
 section#content {
-    margin-top: 100px;
     background-image: url(imagens/frame-iphone.png);
     width: 311px;
     height: 628px;
@@ -27,4 +27,21 @@ section#content {
 #tela {
     width: 263px;
     height: 465px;
+}
+section#buttom {
+    margin: 0px;
+}
+section#buttom img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.479);
+    box-sizing: border-box;
+}
+section#buttom img:hover {
+    border:2px solid rgba(240, 248, 255, 0.484);
+    transform: scale(95%);
+    box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.479);
+    transition-duration: 0.2s;
 }
