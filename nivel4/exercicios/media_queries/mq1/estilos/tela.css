@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* estilo para telas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-family: sans-serif;
+}
+body {
+    background-color: antiquewhite;
+}
+header {
+    background-color: teal;
+}
+header > h1 {
+    text-align: center;
+    padding: 10px;
+}
+header ul {
+    background-color: aquamarine;
+}
+header li {
+    display: inline-block;
+    padding: 10px;
+}
+main article {
+    max-width: 600px;
+    background-color: aliceblue;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
