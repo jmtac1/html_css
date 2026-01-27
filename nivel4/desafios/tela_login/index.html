@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estios/style.css">
+    
 </head>
 <body>
-    <main id="imagem">
-        <div id="formulario">
-            <h1>Login</h1>
-            <p>Seja bem-vindo!</p>
-            <form action="cadastro.php" method="post">
-                <label for="usuario">usuario</label>
-                <input type="text" name="usuario" id="usuario">
-                <label for="senha">senha</label>
-                <input type="password" name="senha" id="senha">
-            </form>
+    <main>
+        <div id="imagem">
+            <div id="login">
+                <h1>Login</h1>
+                <p>Seja bem-vindo!</p>
+                <form action="cadastro.php" method="post">
+                    <div id="user">
+                        <label for="usuario"><img src="imagens/conta.png" alt=""></label>
+                        <input type="text" name="usuario" id="usuario" required placeholder="seu usuario">
+                    </div>
+                    <div id="password">
+                        <label for="senha"><img src="imagens/senha.png" alt=""></label>
+                        <input type="password" name="senha" id="senha" required placeholder="sua senha">
+                    </div>
+                    <div>
+                        <input type="submit" value="enviar">
+                    </div>
+                    <div>
+                        <input type="reset" value="limpar">
+                    </div>
+                </form>
+
+            </div>
         </div>
     </main>
 </body>
