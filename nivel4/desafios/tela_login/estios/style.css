@@ -47,7 +47,7 @@ div#login p {
 }
 input#usuario {
     padding: 14px;
-    width: 83%;
+    width: 83.5%;
     background-color: white;
     margin: none;
     border: none;
@@ -55,7 +55,7 @@ input#usuario {
 }
 input#senha {
     display: inline;
-    width: 83%;
+    width: 83.5%;
     padding: 14px;
     background-color: white;
     border: none;
