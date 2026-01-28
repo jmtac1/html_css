@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estios/style.css">
+    <link rel="stylesheet" href="estios/medias.css">
     
 </head>
 <body>
@@ -15,18 +16,18 @@
                 <p>Seja bem-vindo!</p>
                 <form action="cadastro.php" method="post">
                     <div id="user">
-                        <label for="usuario"><img src="imagens/conta.png" alt=""></label>
-                        <input type="text" name="usuario" id="usuario" required placeholder="seu usuario">
+                        <img src="imagens/conta.png" alt="">
+                        <input type="email" name="usuario" id="usuario" required placeholder="seu e-mail" maxlength="30">
+                        <label for="usuario"></label>
                     </div>
                     <div id="password">
-                        <label for="senha"><img src="imagens/senha.png" alt=""></label>
-                        <input type="password" name="senha" id="senha" required placeholder="sua senha">
+                        <img src="imagens/senha.png" alt="">
+                        <input type="password" name="senha" id="senha" required placeholder="sua senha" minlength="8" maxlength="20">
+                        <label for="senha"></label>
                     </div>
-                    <div>
-                        <input type="submit" value="enviar">
-                    </div>
-                    <div>
-                        <input type="reset" value="limpar">
+                    <div id="entrar">
+                        <input type="submit" value="entrar">
+                        <a id="esqueci" href="#">esqueci minha senha</a>
                     </div>
                 </form>
 

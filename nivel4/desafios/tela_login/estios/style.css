@@ -20,29 +20,34 @@ div#imagem {
     align-items: end;
     width: 400px;
     height: 800px;
-    background: black url(../imagens/pexels-rsantos1232-2820153.jpg) center center no-repeat;
-    background-size:cover;
+    background: black url(../imagens/colors.jpg) center center no-repeat;
+    background-size: cover;
     margin: auto;
     border-radius: 10px;
-    
+    transition: width .3s, heigth .3s;
+    transition-timing-function: ease-in;
+
 }
 div#login {
     background-color: aliceblue;
-    height: 300px;
-    padding: 63px;
+    padding: 15px;
+    height: 330px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 div#login h1 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 div#login p {
     text-align: justify;
     margin: 10px;
+    font-size: .9em;
 }
 input#usuario {
     padding: 14px;
+    width: 83%;
     background-color: white;
     margin: none;
     border: none;
@@ -50,6 +55,7 @@ input#usuario {
 }
 input#senha {
     display: inline;
+    width: 83%;
     padding: 14px;
     background-color: white;
     border: none;
@@ -61,10 +67,45 @@ div#user {
     margin: 5px;
     background-color: #2E426D;
     border-radius: 10px;
+    color: white;
 }
 div#password {
     padding: 3px;
     margin: 5px;
     background-color: #2E426D;
     border-radius: 10px;
+    color: white;
+}
+div#entrar input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 98.5%;
+    height: 50px;
+    background-color: #13690F;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+div#entrar input[type=submit]:hover {
+    background-color: #348430;
+}
+div#entrar > a {
+    display: block;
+    font-size: 1em;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 97.7%;
+    height: 35px;
+    background-color: white;
+    color: #13690F;
+    border: 2px solid #13690F;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+div#entrar > a:hover {
+    background-color: #9dd29a;
 }
