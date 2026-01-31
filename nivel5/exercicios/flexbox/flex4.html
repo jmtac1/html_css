@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 4</title>
+    <style>
+        #conteiner1 {
+            display: flex;
+            flex-direction: row;
+            background-color: teal;
+            justify-content: flex-start;
+        }
+        #conteiner2 {
+            display: flex;
+            flex-direction: row;
+            background-color: teal;
+            justify-content: flex-end;
+        }
+        #conteiner3 {
+            display: flex;
+            flex-direction: row;
+            background-color: teal;
+            justify-content: space-between;
+        }
+        #conteiner4 {
+            display: flex;
+            flex-direction: row;
+            background-color: teal;
+            justify-content: space-evenly;
+        }
+        #conteiner5 {
+            display: flex;
+            flex-direction: row;
+            background-color: teal;
+            justify-content: space-around;
+        }
+        #conteiner6 {
+            display: flex;
+            flex-direction: row;
+            background-color: teal;
+            justify-content: center;
+        }
+        #conteiner7 {
+            display: flex;
+            flex-direction: row;
+            background-color: teal;
+            height: 150px;
+            align-items: stretch;
+        }
+        #conteiner8 {
+            display: flex;
+            flex-direction: row;
+            background-color: teal;
+            height: 150px;
+            align-items: flex-start;
+        }
+        #conteiner9 {
+            display: flex;
+            flex-direction: row;
+            background-color: teal;
+            height: 150px;
+            align-items: center;
+        }
+        #conteiner10 {
+            display: flex;
+            flex-direction: row;
+            background-color: teal;
+            height: 150px;
+            align-items: flex-end;
+        }
+
+        .item {
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>justify-content: flex-start</h1>
+    <div id="conteiner1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>justify-content: flex end</h1>
+    <div id="conteiner2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>justify-content: space-between</h1>
+    <div id="conteiner3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>justify-content: space-evenly</h1>
+    <div id="conteiner4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>justify-content: space-around</h1>
+    <div id="conteiner5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>justify-content: center</h1>
+    <div id="conteiner6">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-items: stretch</h1>
+    <div id="conteiner7">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-items: flex-start</h1>
+    <div id="conteiner8">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-items: center</h1>
+    <div id="conteiner9">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-items: flex-end</h1>
+    <div id="conteiner10">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
