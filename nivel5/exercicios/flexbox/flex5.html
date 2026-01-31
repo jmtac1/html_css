@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 5</title>
+    <style>
+        #conteiner1 {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: teal;
+            align-content:flex-start;
+            height: 400px;
+        }
+        #conteiner2 {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: teal;
+            align-content: flex-end;
+            
+            height: 400px;
+        }
+        #conteiner3 {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: teal;
+            align-content: space-betwealign
+            height: 400px;
+        }
+        #conteiner4 {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: teal;
+            align-content: space-evenly;
+            
+            height: 400px;
+        }
+        #conteiner5 {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: teal;
+            align-content: space-around;
+            height: 400px;
+        }
+        #conteiner6 {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: teal;
+            align-content: center;
+            
+            height: 400px;
+        }
+        #conteiner7 {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: teal;
+            align-content: stretch;
+            
+            height: 400px;
+        }
+        .item {
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>align-content: flex-start</h1>
+    <div id="conteiner1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-content: flex end</h1>
+    <div id="conteiner2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-content: space-between</h1>
+    <div id="conteiner3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-content: space-evenly</h1>
+    <div id="conteiner4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-content: space-around</h1>
+    <div id="conteiner5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-content: center</h1>
+    <div id="conteiner6">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-content: stretch</h1>
+    <div id="conteiner7">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
