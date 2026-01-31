@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 3</title>
+    <style>
+        #conteiner1 {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: teal;
+        }
+        #conteiner2 {
+            display: flex;
+            flex-flow: row-reverse wrap;
+            background-color: teal;
+        }
+        #conteiner3 {
+            display: flex;
+            flex-flow: column wrap;
+            background-color: teal;
+            height: 50px;
+        }
+        #conteiner4 {
+            display: flex;
+            flex-flow: column-reverse wrap;
+            background-color: teal;
+            height: 50px;
+        }
+        .item {
+            flex: auto;
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        .item2 {
+            flex: auto;
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-direction: row</h1>
+    <h2>flex-wrap: wrap</h2>
+    <div id="conteiner1">
+        <div class="item">exemplo de bloco A</div>
+        <div class="item">exemplo de bloco B</div>
+        <div class="item">exemplo de bloco C</div>
+        <div class="item">exemplo de bloco D</div>
+        <div class="item">exemplo de bloco E</div>
+        <div class="item">exemplo de bloco F</div>
+        <div class="item">exemplo de bloco G</div>
+    </div>
+    <h1>flex-direction: row-reverse</h1>
+    <h2>flex-wrap: wrap</h2>
+    <div id="conteiner2">
+        <div class="item">exemplo de bloco A</div>
+        <div class="item">exemplo de bloco B</div>
+        <div class="item">exemplo de bloco C</div>
+        <div class="item">exemplo de bloco D</div>
+        <div class="item">exemplo de bloco E</div>
+        <div class="item">exemplo de bloco F</div>
+        <div class="item">exemplo de bloco G</div>
+    </div>
+    <h1>flex-direction: column</h1>
+    <h2>flex-wrap: wrap</h2>
+    <div id="conteiner3">
+        <div class="item2">exemplo de bloco A</div>
+        <div class="item2">exemplo de bloco B</div>
+        <div class="item2">exemplo de bloco C</div>
+        <div class="item2">exemplo de bloco D</div>
+        <div class="item2">exemplo de bloco E</div>
+        <div class="item2">exemplo de bloco F</div>
+        <div class="item2">exemplo de bloco G</div>
+    </div>
+    <h1>flex-direction: column-reverse</h1>
+    <h2>flex-wrap: wrap</h2>
+    <div id="conteiner4">
+        <div class="item2">exemplo de bloco A</div>
+        <div class="item2">exemplo de bloco B</div>
+        <div class="item2">exemplo de bloco C</div>
+        <div class="item2">exemplo de bloco D</div>
+        <div class="item2">exemplo de bloco E</div>
+        <div class="item2">exemplo de bloco F</div>
+        <div class="item2">exemplo de bloco G</div>
+    </div>
+</body>
+</html>

@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexbox</title>
+    <title>flexbox 2</title>
     <style>
-        .conteiner {
+        #conteiner1 {
             display: flex;
             flex-direction: row;
             background-color: teal;
         }
+        #conteiner2 {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: teal;
+        }
+        #conteiner3 {
+            display: flex;
+            flex-direction: column;
+            background-color: teal;
+        }
+        #conteiner4 {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: teal;
+        }
         .item {
             flex: auto;
-            background-color: salmon;
+            background-color: coral;
             border: 1px solid black;
             text-align: center;
             padding: 10px;
@@ -20,7 +35,38 @@
     </style>
 </head>
 <body>
-    <div class="conteiner">
+    <h1>flex-direction: row</h1>
+    <div id="conteiner1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>flex-direction: row-reverse</h1>
+    <div id="conteiner2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>flex-direction: column</h1>
+    <div id="conteiner3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>flex-direction: column-reverse</h1>
+    <div id="conteiner4">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
