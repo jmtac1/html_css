@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) and (max-width: 905px) {
+    header {
+        display: flex;
+        flex-flow: row wrap; 
+    }
+    header ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+@media screen and (min-width: 906px) {
+    header {
+        display: flex;
+        flex-flow: row wrap; 
+        justify-content: space-between;
+    }
+    header ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    header li {
+        align-self: center;
+    }
+}
