@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 9</title>
+    <style>
+        .conteiner {
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: teal;
+            /* padding: 10px; */
+        }
+        .item {
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            flex-basis: 300px;
+        }
+        #item1 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #item2 {
+            flex-shrink: 0;
+            flex-grow: 10;
+        }
+        #item3 {
+            flex-shrink: 10;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>(A: flex-shrink: 1, flex-grow: 1) (B: flex-shrink: 0, flex-grow: 10) (C: flex-shrink: 10, flex-grow: 0)</h1>
+    <div class="conteiner">
+        <div class="item" id="item1">A</div>
+        <div class="item" id="item2">B</div>
+        <div class="item" id="item3">C</div>
+    </div>
+</body>
+</html>
