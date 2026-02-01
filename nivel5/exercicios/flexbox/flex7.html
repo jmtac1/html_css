@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 7</title>
+    <style>
+        .conteiner {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: teal;
+            width: 600px;
+            height: 600px;
+        }
+        .item {
+            flex: auto;
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        #i1 {
+            align-self: auto;
+        }
+        #i2 {
+            align-self: flex-start;
+        }
+        #i3 {
+            align-self: flex-end;
+        }
+        #i4 {
+            align-self: center;
+        }
+        #i5 {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>align-self: auto, flex-start, flex-end, center, stretch</h1>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+    </div>
+</body>
+</html>
