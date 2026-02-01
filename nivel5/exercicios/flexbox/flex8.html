@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 8</title>
+    <style>
+        .conteiner {
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: teal;
+        }
+        .item {
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: auto;
+        }
+        .item1 {
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-basis: auto</h1>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>flex-basis: 100px</h1>
+    <div class="conteiner">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+        <div class="item1">D</div>
+        <div class="item1">E</div>
+        <div class="item1">F</div>
+        <div class="item1">G</div>
+    </div>
+</body>
+</html>
