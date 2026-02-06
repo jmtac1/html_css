@@ -1,12 +1,3 @@
-/* 
-  Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
-*/
 *{
   margin: 0;
   padding: 0;
@@ -33,6 +24,8 @@ header {
   display: flex;
   justify-content: end;
   align-content: center;
+  position: sticky;
+  top: 0;
 }
 nav#menu ul {
   list-style: none;
@@ -76,7 +69,7 @@ section#ficha p {
 section#ficha img.foto {
   width: 200px;
   aspect-ratio: 1/1;
-  object-fit: cover;
+  object-fit:cover;
   overflow: hidden;
   border-radius: 50%;
   border: 5px solid var(--fundo-card);
@@ -111,7 +104,7 @@ article {
 }
 article h2 {
   color: var(--destaque);
-  margin: 20px;
+  margin-bottom: 20px;
 }
 #skill-container {
   display: grid;
@@ -142,8 +135,71 @@ article h2 {
   background-color: var(--destaque-inverso);
   border-radius: 4px;
 }
-@media screen and (min-width: 600px){
+#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+}
+#formacao-container .curso {
+  background-color: var(--fundo-principal);
+  border-radius: 10px;
+  border-left: 3px solid var(--destaque-inverso);
+  padding: 10px;
+  transition: border-width .5s;
+}
+#formacao-container .curso:hover {
+  border-left-width: 9px;
+  border-color: var(--destaque);
+}
+#formacao-container .instituicao {
+  color: var(--destaque);
+}
+#projetos-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px; 
+}
+#projetos-container .projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 10px;
+  border-left:3px solid var(--destaque-inverso);
+  transition: border-width .5s;
+}
+#projetos-container .projeto:hover {
+  border-left-width: 9px;
+  border-color: var(--destaque);
+}
+#projetos-container .titulo {
+  color: var(--destaque);
+}
+#projetos-container .foto {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+footer {
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 720px){
   #skill-container{
     grid-template-columns: 1fr 1fr;
+  }
+  #projetos-container .projeto {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  #projetos-container .projeto-info {
+    width: 70%;
+  }
+  #projetos-container .foto {
+    width: 30%;
   }
 }
